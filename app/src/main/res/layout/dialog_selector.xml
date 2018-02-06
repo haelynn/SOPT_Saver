@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fafafa">
+
+    <NumberPicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_picker"
+        android:includeFontPadding="false"
+        android:theme="@android:style/Theme.Holo.Light"
+        android:orientation="vertical">
+    </NumberPicker>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#323232"
+            android:text="확인"
+            android:background="@drawable/topcustomline"
+            android:id="@+id/select_dialog_ok_btn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#323232"
+            android:text="취소"
+            android:background="@drawable/topline"
+            android:id="@+id/select_dialog_no_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

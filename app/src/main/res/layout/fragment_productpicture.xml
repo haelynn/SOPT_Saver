@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="366dp"
+    android:background="#fafafa"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/frag_prod_img"
+            android:layout_width="match_parent"
+            android:layout_height="308dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/prodInfo_able_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/detailpage_circle2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/detailpage_circle1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/electronics_prodInfo_item_image1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/electronics_prodInfo_item_image1_text"
+                        android:src="@drawable/detailbox_talk" />
+
+                    <TextView
+                        android:id="@+id/frag_pict_item_image1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/electronics_prodInfo_item_image2"
+                        android:text="text1"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#51c7c9"
+                        android:textSize="9dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

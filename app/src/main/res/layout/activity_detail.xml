@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.DetailInfo.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:id="@+id/paysuccess_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/paysuccess_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mypage_back" />
+
+                <TextView
+                    android:id="@+id/paysuccess_navi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="5dp"
+                    android:text="전자제품"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/paysuccess_report"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.2"
+                    android:includeFontPadding="false"
+                    android:text="신고하기"
+                    android:textColor="#FB9726"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paysuccess_h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="감사합니다. 정상적으로 구매가 완료되었습니다."
+                android:textColor="#FB9726"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/detailpage_profilecircle"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/detail_profile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/detailpage_profile" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/paysuccess_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:text="sopt2017/id"
+                android:textColor="#FB9726"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/paysuccess_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:text="저 더 싼 아이폰 있어요!"
+                android:textColor="#323232"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/detailpage_money" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_price_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="찾은가격"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:text="87만원"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/detailpage_time" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_date_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="구매 가능 기한"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:text="2070630까지"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/detailpage_where" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_where_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="구매 가능 지역"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_where"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:text="인천"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/detailpage_time" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_how_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="구매방법"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_how"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:text="본인거래"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/detailpage_time" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_add_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="상세설명"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/paysuccess_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:includeFontPadding="false"
+                        android:text="인천에서 직거래 가능한데 원하시는 시간 쪽지로 알려주세요!"
+                        android:textColor="#323232"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/paysuccess_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/successpay_messagego" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/paysuccess_sub1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="정보를 정확히 전달 받으셨다면"
+                    android:textColor="#323232"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/paysuccess_sub2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text=" [결제 승인하러가기]"
+                    android:textColor="#FB9726"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

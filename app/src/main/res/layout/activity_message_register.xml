@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.Message.MessageRegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FAFAFA">
+
+        <ImageButton
+            android:id="@+id/message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/message2_back"/>
+
+        <TextView
+            android:id="@+id/message_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="쪽지 아이디"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/message_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/message3_writego" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_weight="9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/container"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="내용"
+                        android:textColor="#323232"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/text_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="215dp"
+                        android:text="0/500"
+                        android:textColor="#323232"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/message_send_content_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="214dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
+                    android:textColor="#323232"
+
+                    android:hint="내용을 입력해 주세요"
+                    android:textSize="10dp"
+                    android:gravity="start"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

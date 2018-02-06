@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#fafafa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/dialog_pointcharge_text1"
+            android:text="해당정보를 열람하시기에"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dialog_pointcharge_text2"
+            android:text="포인트가 부족하십니다."
+            android:textColor="#000000"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_below="@+id/dialog_pointcharge_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/dialog_pointcharge_x_img"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/xicon"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/dialog_pointcharge_ok_btn"
+            android:includeFontPadding="false"
+            android:text="포인트 충전하러 가기"
+            android:textColor="#000000"
+            android:background="@drawable/topline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

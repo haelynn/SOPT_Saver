@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mypage_greybox"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:includeFontPadding="false"
+            android:textColor="#323232"
+            android:id="@+id/mypage_section"
+            android:layout_marginLeft="22dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

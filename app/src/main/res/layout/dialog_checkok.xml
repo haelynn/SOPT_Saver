@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#fafafa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/dialog_ok_text1"
+            android:text="(정보가격)IP를 지불하시고"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dialog_ok_text2"
+            android:text="해당 정보를 구매하시겠습니까?"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_below="@+id/dialog_ok_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/dialog_checkok_x_img"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/xicon"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/dialog_checkok_ok_btn"
+            android:text="네"
+            android:textColor="#000000"
+            android:background="@drawable/topcustomline"
+            android:includeFontPadding="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/dialog_checkok_cancel_btn"
+            android:text="아니오"
+            android:textColor="#000000"
+            android:background="@drawable/topline"
+            android:includeFontPadding="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

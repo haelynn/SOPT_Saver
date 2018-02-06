@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bank_spinner">
+        <item>KB국민</item>
+        <item>신한</item>
+        <item>우리</item>
+        <item>KEB하나</item>
+        <item>IBK기업</item>
+        <item>NH농협</item>
+        <item>SC제일</item>
+    </string-array>
+
+    <string-array name="area_spinner">
+        <item>서울</item>
+        <item>경기</item>
+        <item>인천</item>
+        <item>강원</item>
+        <item>대전</item>
+        <item>부산</item>
+        <item>제주</item>
+        <item>충청</item>
+        <item>경상도</item>
+        <item>전라도</item>
+    </string-array>
+
+    <string-array name="card_spinner">
+        <item>국민</item>
+        <item>신한</item>
+        <item>우리</item>
+        <item>하나</item>
+        <item>롯데</item>
+        <item>삼성</item>
+        <item>현대</item>
+    </string-array>
+
+    <string-array name="visa_spinner">
+        <item>유</item>
+        <item>무</item>
+    </string-array>
+
+    <string-array name="telecom_spinner">
+        <item>SKT</item>
+        <item>KT</item>
+        <item>LGU+</item>
+    </string-array>
+
+    <string-array name="question_spinner">
+        <item>상품문의</item>
+        <item>배송문의</item>
+        <item>반품/취소 및 교환</item>
+        <item>이벤트</item>
+        <item>기타</item>
+    </string-array>
+
+
+
+
+</resources>

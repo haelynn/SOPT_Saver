@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="0.9"
+    android:background="#fafafa">
+    <RelativeLayout
+        android:id="@+id/category_upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="@drawable/category_navibarbg">
+
+        <ImageView
+            android:id="@+id/category_mypage_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mypageicon" />
+
+        <TextView
+            android:id="@+id/category_upper_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textSize="16dp"
+            android:text="카테고리"
+            android:textStyle="bold"
+            android:textColor="#323232" />
+        <EditText
+            android:id="@+id/category_find_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:textColor="#323232"
+            android:textSize="11dp"
+            android:visibility="gone"
+            android:background="@drawable/barhandbackground"/>
+        <ImageView
+            android:id="@+id/category_find_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/category_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.81"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/cate_img1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image1" />
+
+            <ImageView
+                android:id="@+id/cate_img2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cate_img3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image3" />
+
+            <ImageView
+                android:id="@+id/cate_img4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image4" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/cate_img5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image5" />
+
+            <ImageView
+                android:id="@+id/cate_img6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/category_image6" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

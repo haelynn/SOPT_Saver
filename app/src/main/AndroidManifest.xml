@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sopt.saver.saver"
+    android:installLocation="preferExternal">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".application.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/saver_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/saver_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".Login.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.LoginActivity"></activity>
+        <activity
+            android:name=".PointPage.PointPageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name= ".Sign.SignUpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainViewPager.MainViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".Sign.SignUpAddinfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Mypage.ChargeSuccessActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Mypage.ChargePageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Mypage.MyPageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailInfo.DetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Write.WriteCommentPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Write.WritePageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Electronics.ESellerListViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Electronics.ERecyclerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Question.QuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Electronics.ERecyclerSearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Electronics.ERecyclerSearchCategoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Mypage.EditMyInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Message.MessageDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Mypage.DevelopePage"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Message.MessageRegisterActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+</manifest>

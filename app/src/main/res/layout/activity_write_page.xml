@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.Write.WritePageActivity">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/main_actionbar"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/writepage_back"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.1"
+                    android:id="@+id/write_back_btn" />
+
+                <TextView
+                    android:id="@+id/write_upper_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성하기"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:textSize="16dp"
+                    android:textColor="#323232"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/writepage_writesuccess"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+                    android:id="@+id/writepage_success_btn"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:id="@+id/write_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="제목 "
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/write_title_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="제목을 입력해주세요"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:textColorHint="#323232"
+                        android:textSize="18dp"/>
+
+                    <!-- 카테고리 -->
+                    <TextView
+                        android:id="@+id/write_cate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:includeFontPadding="false"
+                        android:text="카테고리 "
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wrtiepage_electronics2"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/write_electronics_btn" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/writepage_ticket2"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="1"
+                            android:id="@+id/write_ticket_btn"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/writepage_brand2"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/write_brand_btn"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/writepage_smartphone2"
+                            android:layout_weight="1"
+                            android:id="@+id/write_smartphone_btn"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/writepage_guita2"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="1"
+                            android:id="@+id/write_etc_btn"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.45">
+
+                        <TextView
+                            android:id="@+id/write_kind_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="품종 "
+                            android:textSize="10dp"
+                            android:textColor="#FB9726"/>
+
+                            <EditText
+                                android:id="@+id/write_kind_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@android:color/holo_blue_dark"
+                                android:hint="품종을 입력해주세요"
+                                android:includeFontPadding="false"
+                                android:textColor="#323232"
+                                android:textColorHint="#323232"
+                                android:textCursorDrawable="@android:color/holo_blue_dark"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.45">
+
+                            <TextView
+                                android:id="@+id/write_prod_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="상품 "
+                                android:textSize="10dp"
+                                android:textColor="#FB9726"/>
+
+                            <EditText
+                                android:id="@+id/write_product_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:includeFontPadding="false"
+                                android:hint="상품을 입력해주세요"
+                                android:textColor="#323232"
+                                android:backgroundTint="@android:color/holo_blue_dark"
+                                android:textCursorDrawable="@android:color/holo_blue_dark"
+                                android:textColorHint="#323232"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/write_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="찾은가격"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <EditText
+                        android:id="@+id/write_price_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="가격을 입력해주세요"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:textColorHint="#323232"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/write_url_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="URL"
+                        android:includeFontPadding="false"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <EditText
+                        android:id="@+id/write_url_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="URL을 입력해주세요"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textColorHint="#323232"
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/write_day_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="기한"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <DatePicker
+                        android:id="@+id/write_datepicker"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:datePickerMode="spinner"
+                        android:calendarViewShown="false"
+                        android:theme="@android:style/Theme.Holo.Light"></DatePicker>
+
+                    <TextView
+                        android:id="@+id/write_sub_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="요구사항"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <EditText
+                        android:id="@+id/write_want_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/write_add_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="추가정보"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <EditText
+                        android:id="@+id/write_add_info_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:includeFontPadding="false"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textColor="#323232"
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/write_image_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="이미지 추가"
+                        android:textSize="10dp"
+                        android:textColor="#FB9726"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_add_img"
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/writepage_imageinput"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

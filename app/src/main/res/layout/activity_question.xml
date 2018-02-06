@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.sopt.saver.saver.Question.QuestionActivity">
+
+    <!-- 상단바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/category_navibarbg"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/question_back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/message2_back"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/question_title"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:textColor="#323232"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/question_register_btn"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message3_writego"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+    <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingTop="33dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="문의 "
+                        android:textSize="10dp"
+                        android:id="@+id/question_tv1"
+                        android:includeFontPadding="false"
+                        android:textColor="#fb9726"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:id="@+id/question_et1"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:hint="문의 제목을 입력해주세요."
+                        android:textColorHint="#323232"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="답변받을 이메일"
+                        android:id="@+id/question_tv2"
+                        android:textSize="10dp"
+                        android:includeFontPadding="false"
+                        android:textColor="#fb9726"/>
+
+                    <EditText
+                        android:id="@+id/question_et2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="이메일을 입력해주세요."
+                        android:textColorHint="#323232"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textColorHighlight="#323232"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:textSize="13dp"
+                        android:textColor="#323232"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="문의 내용"
+                        android:textSize="10dp"
+                        android:id="@+id/question_tv3"
+                        android:textColor="#fb9726"/>
+                </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/question_et3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:maxLines="15"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="10dp"
+                        android:hint="내용을 입력해 주세요"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:background="@drawable/editborder2"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textColorHint="#323232"
+                        android:textSize="13dp"
+                        android:textColor="#323232" />
+
+
+        </LinearLayout>
+
+</LinearLayout>

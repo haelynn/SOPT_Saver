@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/point_whitebox"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#323232"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"
+            android:id="@+id/point_account_txt"
+            android:includeFontPadding="false"
+            android:text="계좌 번호" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#323232"
+            android:textSize="10dp"
+            android:includeFontPadding="false"
+            android:id="@+id/pointpage_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="10dp"
+            android:textColor="#323232"
+            android:includeFontPadding="false"
+            android:id="@+id/pointpage_accountnum"/>
+
+    </LinearLayout>
+
+</LinearLayout>

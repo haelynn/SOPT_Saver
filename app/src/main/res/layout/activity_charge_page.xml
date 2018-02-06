@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.Mypage.ChargePageActivity">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/charge_back"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.1"
+                    android:id="@+id/charge_point_btn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="충전하기"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:id="@+id/charge_navi"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:layout_weight="0.8"/>
+
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+                    android:id="@+id/mypage_more_btn"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/charge_pointbg"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1,800 P"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff"
+                        android:id="@+id/charge_point"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현재 보유포인트"
+                    android:includeFontPadding="false"
+                    android:id="@+id/charge_have_point"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#323232"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/charge_30boxbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="충전금액"
+                        android:textColor="#323232"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:id="@+id/charge_money_section"
+                        android:textSize="9dp"/>
+                </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/charge_35bgbox"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="30,000원"
+                            android:checked="true"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#323232"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/charge_30000"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="50,000원"
+                            android:includeFontPadding="false"
+                            android:textSize="10dp"
+                            android:textColor="#323232"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/charge_50000"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="100,000원"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#323232"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/charge_100000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/charge_35bgbox"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="직접입력"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:id="@+id/charge_input"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:textColor="#323232"/>
+
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_height="26dp"
+                            android:textColor="#323232"
+                            android:id="@+id/charge_input_edit"
+                            android:paddingLeft="5dp"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:backgroundTint="@android:color/holo_blue_dark"
+                            android:textCursorDrawable="@android:color/holo_blue_dark"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/editborder"/>
+                    </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/charge_30boxbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="충전방법"
+                        android:textColor="#323232"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/how_to_charge_section"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="22dp"
+                        android:textSize="9dp"/>
+                </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/charge_35bgbox">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:src="@drawable/checkbox"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:includeFontPadding="false"
+                            android:text="무통장입금"
+                            android:textSize="10dp"
+                            android:id="@+id/charge_no_account"
+                            android:textColor="#323232"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/charge_35bgbox">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:enabled="false"
+                            android:text="실시간계좌이체"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#9d9d9d"
+                            android:button="@drawable/mycheck"
+                            android:id="@+id/charge_trade"
+                            android:paddingLeft="5dp"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="가상계좌"
+                            android:textSize="10dp"
+                            android:button="@drawable/mycheck"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="5dp"
+                            android:enabled="false"
+                            android:textColor="#9d9d9d"
+                            android:id="@+id/charge_vaccount"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/charge_35bgbox">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="신용카드"
+                            android:includeFontPadding="false"
+                            android:textSize="10dp"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/charge_card"
+                            android:textColor="#9d9d9d"
+                            android:enabled="false"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="휴대폰결제"
+                            android:textSize="10dp"
+                            android:includeFontPadding="false"
+                            android:button="@drawable/mycheck"
+                            android:paddingLeft="5dp"
+                            android:textColor="#9d9d9d"
+                            android:enabled="false"
+                            android:id="@+id/charge_phone"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(서비스 준비중입니다/현재 무통장입금만 가능합니다)"
+                        android:textSize="10dp"
+                        android:textColor="#747474"
+                        android:id="@+id/charge_sub"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="22dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/charge_payment"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/charge_pay"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

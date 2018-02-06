@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.PointPage.PointPageActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/point_mypage_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mypage_back" />
+
+                <TextView
+                    android:id="@+id/point_navi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="포인트 관리"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:textSize="16dp" />
+
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/point_pointcircle" />
+
+                    <TextView
+                        android:id="@+id/point_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="1,800 P"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/point_have"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:includeFontPadding="false"
+                    android:text="현재 보유포인트"
+                    android:textColor="#323232"
+                    android:textSize="13dp" />
+
+                <ImageButton
+                    android:id="@+id/point_charge_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/point_charge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55">
+
+                <ListView
+                    android:id="@+id/pointlistviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

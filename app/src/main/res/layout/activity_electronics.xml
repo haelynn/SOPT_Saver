@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sopt.saver.saver.Electronics.ERecyclerListActivity"
+    android:background="#fafafa"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/category_navibarbg">
+
+        <ImageView
+            android:id="@+id/electronics_back_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/message2_back" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/ER_UPPERBAR_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:text="전자제품"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+        <EditText
+            android:id="@+id/electronics_find_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:includeFontPadding="false"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#323232"
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:background="@drawable/barhandbackground"/>
+
+        <ImageView
+            android:id="@+id/electronics_find_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/category_search" />
+
+        <ImageView
+            android:id="@+id/electronics_write_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/message2_write" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/RefreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/electronics_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sopt.saver.saver.Mypage.DevelopePage"
+    android:background="#fafafa">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mypage_back"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.1"
+                    android:id="@+id/develope_back_btn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공지사항"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:includeFontPadding="false"
+                    android:id="@+id/develope_navi"
+                    android:gravity="center"
+                    android:layout_weight="0.8"/>
+
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/saver_logo"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="공지사항"
+                        android:id="@+id/develope_notice1"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SOPT 20th 개발버전 1.0.1v"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_notice2"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="기획"
+                        android:id="@+id/develope_ceo"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="박지혁  경희대학교 응용수학과"
+                        android:textSize="12dp"
+                        android:id="@+id/develope_jh"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="디자인"
+                        android:id="@+id/develope_design"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김희원  성신여자대학교 산업디자인과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:id="@+id/develope_hw_d"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="최효진  성신여자대학교 산업디자인과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_hj"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/develope_server"
+                        android:includeFontPadding="false"
+                        android:text="서버"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김용현  동국대학교 컴퓨터공학과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:id="@+id/develope_yh"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김찬중  대진대학교 컴퓨터공학과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_cj"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="안드로이드 개발"
+                        android:includeFontPadding="false"
+                        android:id="@+id/develope_android"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="권용일  중앙대학교 컴퓨터공학부"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_yl"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김혜린  가톨릭대학교 미디어기술콘텐츠학과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:id="@+id/develope_hl"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="배효원  성신여자대학교 IT학부"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_hw_a"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IOS 개발"
+                        android:includeFontPadding="false"
+                        android:id="@+id/develope_ios"
+                        android:textColor="#FB9726"
+                        android:textSize="11dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이승수  상명대학교 컴퓨터과학과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/develope_ss"
+                        android:textColor="#323232"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="조수민  덕성여자대학교 컴퓨터학과"
+                        android:includeFontPadding="false"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:id="@+id/develope_sm"
+                        android:textColor="#323232"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

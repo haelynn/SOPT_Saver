@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.sopt.saver.saver.Write.WriteCommentPage">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 상단바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/category_navibarbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/comment_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/writepage_back" />
+
+                <TextView
+                    android:id="@+id/comment_navi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="답글달기"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:textSize="16dp" />
+
+
+                <ImageButton
+                    android:id="@+id/editmyinfo_success_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/writepage_writesuccess" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 내용 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="31dp"
+                    android:paddingRight="31dp"
+                    android:paddingTop="18dp">
+
+                    <TextView
+                        android:id="@+id/comment_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="제목"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/comment_title_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:hint="제목을 입력해주세요"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:textColorHint="#323232"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/comment_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="찾은가격"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/comment_price_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:hint="가격을 입력해주세요"
+                        android:inputType="number"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:textColorHint="#323232"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/comment_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="구매 가능 기한"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <DatePicker
+                        android:id="@+id/comment_date_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:theme="@android:style/Theme.Holo.Light"></DatePicker>
+
+                    <TextView
+                        android:id="@+id/comment_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="구매 가능 지역"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/comment_city_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="6"
+                        android:includeFontPadding="false"
+                        android:text="선택하기"
+                        android:textColor="#323232"
+                        android:textSize="13dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/comment_how"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="구매방법"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/comment_rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checkedButton="@+id/comment_rb_link"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/comment_rb_link"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@drawable/mycheck"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="5dp"
+                                android:text="링크"
+                                android:textColor="#323232"
+                                android:textSize="13dp" />
+
+                            <RadioButton
+                                android:id="@+id/comment_rb_self"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@drawable/mycheck"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="5dp"
+                                android:text="본인거래"
+                                android:textColor="#323232"
+                                android:textSize="13dp" />
+
+                            <RadioButton
+                                android:id="@+id/comment_rb_trade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@drawable/mycheck"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="5dp"
+                                android:text="중개"
+                                android:textColor="#323232"
+                                android:textSize="13dp" />
+
+                            <RadioButton
+                                android:id="@+id/comment_rb_etc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:button="@drawable/mycheck"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="5dp"
+                                android:text="기타"
+                                android:textColor="#323232"
+                                android:textSize="13dp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/comment_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="상세설명"
+                        android:textColor="#FB9726"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/comment_sub_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="9"
+                        android:background="@drawable/editborder3"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:hint="구체적인 링크, 판매자 정보, 구체적인 방법을 입력해주세요"
+                        android:includeFontPadding="false"
+                        android:textColor="#323232"
+                        android:textColorHint="#323232"
+                        android:textCursorDrawable="@android:color/holo_blue_dark"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

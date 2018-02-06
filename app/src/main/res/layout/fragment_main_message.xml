@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="0.9">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="#FAFAFA">
+        <TextView
+            android:id="@+id/message_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="쪽지함"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.81"
+        android:gravity="center"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/main_message_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_message_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

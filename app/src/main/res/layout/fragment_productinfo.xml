@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="366dp"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/detailpage_profilebg">
+            <ImageView
+                android:id="@+id/electronics_prodInfo_item_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/electronics_prodInfo_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="60dp"
+            android:includeFontPadding="false"
+            android:text="null[time]"
+            android:textSize="9dp"
+            android:textColor="#323232"/>
+
+        <TextView
+            android:id="@+id/electronics_prodInfo_userid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/electronics_prodInfo_time_tv"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:text="null[id]"
+            android:textColor="#fb9726"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/electronics_prodInfo_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="아이폰 6 더 싸게 구해요!"
+        android:textColor="#323232"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detailpage_question" />
+
+            <TextView
+                android:id="@+id/electronics_prodInfo_item_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:includeFontPadding="false"
+                android:text="[NULL] null"
+                android:textColor="#323232"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detailpage_money" />
+
+            <TextView
+                android:id="@+id/electronics_prodInfo_item_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:includeFontPadding="false"
+                android:text="null"
+                android:textColor="#323232"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detailpage_time" />
+
+            <TextView
+                android:id="@+id/electronics_prodInfo_item_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:includeFontPadding="false"
+                android:text="null"
+                android:textColor="#323232"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detailpage_talk" />
+
+            <TextView
+                android:id="@+id/electronics_prodInfo_item_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:includeFontPadding="false"
+                android:text="null"
+                android:textColor="#323232"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detailpage_question" />
+
+            <TextView
+                android:id="@+id/electronics_prodInfo_item_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:includeFontPadding="false"
+                android:text="null"
+                android:textColor="#323232"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="26dp">
+
+            <Button
+                android:id="@+id/electronics_prodInfo_answer_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/detailpage_reply" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/prodInfo_able_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/detailpage_circle1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/detailpage_circle2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/electronics_prodInfo_item_image1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/electronics_prodInfo_item_image1_text"
+                        android:src="@drawable/detailbox_talk" />
+
+                    <TextView
+                        android:id="@+id/electronics_prodInfo_item_image1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="text1"
+                        android:textColor="#51c7c9"
+                        android:layout_marginRight="20dp"
+                        android:textSize="9dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
