@@ -1,6 +1,9 @@
 # 19th S.O.P.T &lt;SAVER>
 ### 19기 S.O.P.T &lt;SAVER> 안드로이드 파트 B시드 개발자 참여
 
+### Google Play Store
+- link(*현재서버종료*) : syntax: [GooglePlayStore/Saver](https://play.google.com/store/apps/details?id=com.sopt.saver.saver)
+
 ### 개발자
 - 기획자 : 박지혁
 - 디자이너 : 김희원, 최효진
