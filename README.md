@@ -13,7 +13,7 @@ Saver는 검색시간 없이 누구나 쉽고, 간편하게 상품 가격 정보
 Saver가 시간절약과 합리적인 소비를 도와드리겠습니다
 
 ### Google Play Store
-- LINK(현재서버종료) : syntax: [GooglePlayStore/Saver](https://play.google.com/store/apps/details?id=com.sopt.saver.saver)
+- LINK(현재서버종료) : [GooglePlayStore/Saver](https://play.google.com/store/apps/details?id=com.sopt.saver.saver)
 
 ### 개발환경
 - 플랫폼 : Android + IOS
