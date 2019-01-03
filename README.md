@@ -30,3 +30,9 @@ Saver가 시간절약과 합리적인 소비를 도와드리겠습니다
 
 ### 프로젝트 역할
 로그인(로컬) / 마이페이지 / 포인트관리 / 그 외 세부페이지
+
+### PREVIEW
+
+<img src="https://lh3.googleusercontent.com/7EfJDJ-rLd_vbRMB7QK3e3OkT70tk01KPkDPw0_gHEgj9sHo0VyYL9x5-_FHqFbmbrQ=w1440-h620-rw" width="20%"> <img src="https://lh3.googleusercontent.com/0IFr36N3PYnrGq43IHRRyUxXz6SGUWJt8OvkwZ0oVljZpe5yIrYesug3x_b70NcvgA=w1440-h620-rw" width="20%"> <img src="https://lh3.googleusercontent.com/CiDe7n5FIgs3knDSiTwoxKFZwFN1o6QG6OPHYK5eZiiwPHhasPgZblkJOmD2L0x5aV0C=w1440-h620-rw" width="20%">
+
+<img src="https://lh3.googleusercontent.com/MmOWBA09HZzCEH-fXu7NNZlS-KKIwOv3QSiBfjl5H0KanyuaDYDvw22CH5m4G2B_IIk=w1440-h620-rw" width="20%"> <img src="https://lh3.googleusercontent.com/kJ4SZRSoQ3mErMzADbyt82mbKTTQy1KQ835T513HjsuX8DijtkK41sVRCRJ8kzLzChc=w1440-h620-rw" width="20%">
